@@ -1,18 +1,297 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+* {
+  box-sizing: border-box;
+}
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1440px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+.gallery img {
+  max-width: 360px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.lamp {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: background-color 0.3s;
+}
+
+.lamp.on {
+  background-color: yellow;
+}
+
+body.dark-theme {
+  background-color: #111;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.page {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.page.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: grey;
+  transition: background-color 0.3s;
+}
+.box.active {
+  background-color: gold;
+}
+
+.page {
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.page.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.my-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: gray;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.my-btn.active {
+  background-color: blue;
+  color: white;
+  transform: scale(1.1);
+}
+
+.short {
+  color: red;
+}
+.valid {
+  color: green;
+}
+.long {
+  color: orange;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  background: #f0f0f0;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
+
+.product-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  background: #e8f5e9;
+}
+
+.bought {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+
+body {
+  background-color: white;
+  color: black;
+  transition: 0.3s ease;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.card {
+  padding: 10px;
+  margin: 5px;
+  background: #eee;
+}
+
+.hidden {
+  display: none;
+}
+
+#task-list li {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#task-list button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#task-list button:hover {
+  color: red;
+}
+
+/* body.dark-theme {
+    background-color: black;
+    color: white;
+  } */
+
+body {
+  transition: background-color 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  opacity: 0.3;
+  margin: 10px auto;
+  transition: opacity 0.3s ease;
+}
+
+.circle-red {
+  background-color: red;
+}
+.circle-yellow {
+  background-color: yellow;
+}
+.circle-green {
+  background-color: green;
+}
+
+.active {
+  opacity: 1;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+.gallery {
+  text-align: center;
+}
+
+.main-image {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid black;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumb {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 2px solid transparent;
+  transition: 0.3s ease;
+}
+
+.thumb:hover,
+.thumb.active {
+  opacity: 1;
+  border-color: black;
+}
+
+.prev-btn,
+.next-btn {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
