@@ -1,0 +1,2 @@
+import"./assets/styles-CQuXquEV.js";const n=document.querySelector(".email-input"),o=document.querySelector(".submit-btn"),e=document.querySelector(".result-message");o.addEventListener("click",()=>{const t=n.value.trim();t.includes("@")&&t.includes(".")?(e.textContent="Email прийнято ✅",e.style.color="green"):(e.textContent="Неправильний email ❌",e.style.color="red")});
+//# sourceMappingURL=task-5.js.map
