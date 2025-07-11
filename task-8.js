@@ -1,0 +1,2 @@
+import"./assets/styles-CQuXquEV.js";const r=document.querySelector(".create-square"),n=document.querySelector(".square-container");r.addEventListener("click",()=>{const t=document.createElement("div");t.classList.add("square"),t.style.backgroundColor=a(),n.append(t)});function a(){const t=Math.floor(Math.random()*256),e=Math.floor(Math.random()*256),o=Math.floor(Math.random()*256);return`rgb(${t}, ${e}, ${o})`}
+//# sourceMappingURL=task-8.js.map

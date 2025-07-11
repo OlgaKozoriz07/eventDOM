@@ -1,0 +1,2 @@
+import"./assets/styles-CQuXquEV.js";const n=document.querySelector(".task-input"),c=document.querySelector(".add-btn"),o=document.querySelector(".task-list"),l=document.querySelector(".remove-btn");c.addEventListener("click",()=>{const t=n.value.trim();if(t!==""){const e=document.createElement("li");e.textContent=t,o.append(e),n.value=""}});l.addEventListener("click",()=>{const t=o.lastElementChild;t&&t.remove()});
+//# sourceMappingURL=task-7.js.map
